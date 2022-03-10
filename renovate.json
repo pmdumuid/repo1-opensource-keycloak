@@ -1,0 +1,27 @@
+{
+  "assignees": ["@sean.melissari"],
+  "baseBranches": ["development"],
+  "packageRules": [
+    {
+      "datasources": ["docker"],
+      "packageNames": ["quay.io/keycloak/keycloak"],
+      "separateMinorPatch": true,
+      "major": {
+        "enabled": true
+      }
+    }
+  ],
+  "automerge": true,
+  "gitLabAutomerge": true,
+  "regexManagers": [
+    {
+      "fileMatch": ["^hardening_manifest.yaml$"],
+      "matchStrings": [
+        "org\\.opencontainers\\.image\\.version:\\s+(\\s|\"|')?(?<currentValue>.+?)(\\s|\"|'|$)",
+        "tags:\\s+-(\\s|\"|')+(?<currentValue>.+?)(\\s|\"|'|$)+"
+      ],
+      "depNameTemplate": "quay.io/keycloak/keycloak",
+      "datasourceTemplate": "docker"
+    }
+  ]
+}
