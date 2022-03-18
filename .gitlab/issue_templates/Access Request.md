@@ -1,8 +1,8 @@
 ## Summary
 
 The following individuals are requesting access to this project (one per line):
-(List or tag all individuals here)
-
+(Tag all individuals here)
+- Tag here
 
 The access level should be:
 - [ ] Developer access
@@ -16,4 +16,4 @@ The access level should be:
 
 
 
-/label ~"Access" ~"To Do"
+/label ~"Access Request" ~"To Do" ~"Owner::Ironbank"
