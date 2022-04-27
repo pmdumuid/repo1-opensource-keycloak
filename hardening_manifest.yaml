@@ -17,7 +17,7 @@ labels:
   org.opencontainers.image.licenses: "Apache-2.0"
   org.opencontainers.image.url: "https://www.keycloak.org"
   org.opencontainers.image.vendor: "Red Hat"
-  org.opencontainers.image.version: "17.0.1"
+  org.opencontainers.image.version: "18.0.0"
   mil.dso.ironbank.image.keywords: "auth,idam,sso"
   mil.dso.ironbank.image.type: "opensource"
   mil.dso.ironbank.product.name: "Keycloak"
