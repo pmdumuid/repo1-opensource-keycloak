@@ -24,7 +24,7 @@ labels:
 
 resources:
 - tag: quay.io/keycloak/keycloak:18.0.0
-  url: docker://quay.io/keycloak/keycloak@sha256:ba3be9ca05a7fb43aaf5518f4269bfdf96ef57c0d289b70396b6fa745a4e67b3
+  url: docker://quay.io/keycloak/keycloak@sha256:7f80b2c243c738761bb8702c16b7f30da40426604f2c18a5767492917ca886dc
 
 maintainers:
 - name: "Sean Melissari"
