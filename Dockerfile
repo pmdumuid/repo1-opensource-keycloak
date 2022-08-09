@@ -15,7 +15,6 @@ RUN dnf update -y && \
     echo "keycloak:x:1000:0:keycloak user:/opt/keycloak:/sbin/nologin" >> /etc/passwd
 
 COPY --from=upstream --chown=1000:0 /opt/keycloak /opt/keycloak
-COPY --chmod=755 --chown=1000:0 scripts/kc.sh /opt/keycloak/bin/kc.sh
 
 USER 1000
 
