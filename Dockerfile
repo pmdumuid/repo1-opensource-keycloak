@@ -18,6 +18,9 @@ COPY --from=upstream --chown=1000:0 /opt/keycloak /opt/keycloak
 
 USER 1000
 
+RUN chgrp ${USER} ${HOME} && \
+        chmod 750 ${HOME}
+
 EXPOSE 8080 8443
 
 HEALTHCHECK --timeout=5m --start-period=2m --retries=3 \
