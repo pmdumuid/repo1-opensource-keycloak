@@ -13,13 +13,11 @@ RUN dnf update -y && \
     rm -rf /var/cache/dnf && \
     echo "keycloak:x:0:root" >> /etc/group && \
     echo "keycloak:x:1000:0:keycloak user:/opt/keycloak:/sbin/nologin" >> /etc/passwd
+    chmod -R 750 /opt/keycloak/
 
 COPY --from=upstream --chown=1000:0 /opt/keycloak /opt/keycloak
 
 USER 1000
-
-RUN chgrp ${USER} ${HOME} && \
-        chmod 750 ${HOME}
 
 EXPOSE 8080 8443
 
