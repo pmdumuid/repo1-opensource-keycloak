@@ -16,6 +16,9 @@ RUN dnf update -y && \
 
 COPY --from=upstream --chown=1000:0 /opt/keycloak /opt/keycloak
 
+# Prevent CCE-84038-9 and CCE-85888-6
+RUN chmod -R 0750 /opt/keycloak
+
 USER 1000
 
 EXPOSE 8080 8443
