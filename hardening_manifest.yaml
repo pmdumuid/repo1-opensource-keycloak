@@ -16,7 +16,7 @@ labels:
   org.opencontainers.image.description: "Keycloak is an open source Identity and Access Management solution aimed at modern applications and services."
   org.opencontainers.image.licenses: "Apache-2.0"
   org.opencontainers.image.url: "https://www.keycloak.org"
-  org.opencontainers.image.vendor: "Red Hat"
+  org.opencontainers.image.vendor: "Iron Bank"
   org.opencontainers.image.version: "20.0.1"
   mil.dso.ironbank.image.keywords: "auth,idam,sso"
   mil.dso.ironbank.image.type: "opensource"
