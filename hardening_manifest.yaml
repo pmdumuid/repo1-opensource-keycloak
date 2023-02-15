@@ -27,7 +27,11 @@ resources:
   url: docker://quay.io/keycloak/keycloak@sha256:b8f2a453a17a244a829fdafdb08dd77f719d3622bc3987c76a81771c0913b882
 
 maintainers:
-- name: "Sean Melissari"
-  username: "sean.melissari"
-  email: "melissari_sean@bah.com"
-  cht_member: true
+  - name: "Jacob Hanafin"
+    username: "hanafin.jacob"
+    email: "jacob.hanafin@sigmadefense.com"
+    cht_member: true
+  - name: "Marcus Montgomery"
+    email: "marcus.montgomery@sigmadefense.com"
+    username: "montgomery.marcus"
+    cht_member: true
