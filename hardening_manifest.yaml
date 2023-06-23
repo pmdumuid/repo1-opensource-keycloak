@@ -8,8 +8,8 @@ tags:
 - "latest"
 
 args:
-  BASE_IMAGE: "redhat/openjdk/openjdk11"
-  BASE_TAG: "1.11"
+  BASE_IMAGE: "redhat/openjdk/openjdk17-devel-ubi9-slim"
+  BASE_TAG: "1.17"
 
 labels:
   org.opencontainers.image.title: "keycloak"
@@ -34,4 +34,8 @@ maintainers:
   - name: "Marcus Montgomery"
     email: "marcus.montgomery@sigmadefense.com"
     username: "montgomery.marcus"
+    cht_member: true
+  - name: "Jeff Weatherford"
+    username: "jweatherford"
+    email: "jweatherford@oteemo.com"
     cht_member: true
