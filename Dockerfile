@@ -12,7 +12,7 @@ RUN microdnf update -y && \
     microdnf clean all && \
     rm -rf /var/cache/dnf && \
     # We have to add the FIPS provider to make SAML work: https://www.keycloak.org/server/fips
-    echo "fips.provider.7=XMLDSig" >> /usr/lib/jvm/java/conf/security/java.security \
+    echo "fips.provider.7=XMLDSig" >> /usr/lib/jvm/java/conf/security/java.security && \
     # User stuff
     echo "keycloak:x:0:root" >> /etc/group && \
     echo "keycloak:x:1000:0:keycloak user:/opt/keycloak:/sbin/nologin" >> /etc/passwd
