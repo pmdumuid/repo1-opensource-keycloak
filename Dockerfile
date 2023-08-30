@@ -14,15 +14,15 @@ RUN microdnf update -y && \
     # We have to add the FIPS provider to make SAML work: https://www.keycloak.org/server/fips
     echo "fips.provider.7=XMLDSig" >> /usr/lib/jvm/java/conf/security/java.security && \
     # User stuff
-    echo "keycloak:x:0:root" >> /etc/group && \
-    echo "keycloak:x:1000:0:keycloak user:/opt/keycloak:/sbin/nologin" >> /etc/passwd
+    echo "keycloak:x:2000:root" >> /etc/group && \
+    echo "keycloak:x:2000:2000:keycloak user:/opt/keycloak:/sbin/nologin" >> /etc/passwd
 
-COPY --from=upstream --chown=1000:0 /opt/keycloak /opt/keycloak
+COPY --from=upstream --chown=2000:2000 /opt/keycloak /opt/keycloak
 
 # Prevent CCE-84038-9 and CCE-85888-6
 RUN chmod -R 0750 /opt/keycloak
 
-USER 1000
+USER keycloak
 
 EXPOSE 8080 8443
 
