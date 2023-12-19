@@ -26,7 +26,5 @@ USER keycloak
 
 EXPOSE 8080 8443
 
-HEALTHCHECK --timeout=5m --start-period=2m --retries=3 \
-   CMD curl -fs http://localhost:8080 || curl -fsk https://localhost:8443 || exit 1
 
 ENTRYPOINT [ "/opt/keycloak/bin/kc.sh" ]
