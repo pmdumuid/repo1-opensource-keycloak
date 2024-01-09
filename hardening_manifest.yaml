@@ -4,7 +4,7 @@ apiVersion: v1
 name: "opensource/keycloak/keycloak"
 
 tags:
-- "23.0.3"
+- "23.0.4"
 - "latest"
 
 args:
@@ -17,14 +17,14 @@ labels:
   org.opencontainers.image.licenses: "Apache-2.0"
   org.opencontainers.image.url: "https://www.keycloak.org"
   org.opencontainers.image.vendor: "Iron Bank"
-  org.opencontainers.image.version: "23.0.3"
+  org.opencontainers.image.version: "23.0.4"
   mil.dso.ironbank.image.keywords: "auth,idam,sso"
   mil.dso.ironbank.image.type: "opensource"
   mil.dso.ironbank.product.name: "Keycloak"
 
 resources:
-- tag: quay.io/keycloak/keycloak:23.0.3
-  url: docker://quay.io/keycloak/keycloak@sha256:4f72a5b0c076755e806457d96404dd28dc1394013933d7170c154c26db9b6a16
+- tag: quay.io/keycloak/keycloak:23.0.4
+  url: docker://quay.io/keycloak/keycloak@sha256:4281aa5007b370de736969d991e0b63b45c389319f08948e834418b950c07155
 
 maintainers:
   - name: "Jacob Hanafin"
