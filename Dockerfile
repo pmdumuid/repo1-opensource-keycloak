@@ -2,7 +2,7 @@ ARG BASE_REGISTRY=registry1.dso.mil
 ARG BASE_IMAGE=ironbank/redhat/openjdk/openjdk17-devel-ubi9-slim
 ARG BASE_TAG=1.17
 
-FROM quay.io/keycloak/keycloak:24.0.1 as upstream
+FROM quay.io/keycloak/keycloak:24.0.2 as upstream
 
 FROM ${BASE_REGISTRY}/${BASE_IMAGE}:${BASE_TAG}
 
