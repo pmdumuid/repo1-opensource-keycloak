@@ -4,7 +4,7 @@ apiVersion: v1
 name: "opensource/keycloak/keycloak"
 
 tags:
-- "24.0.2"
+- "24.0.3"
 - "latest"
 
 args:
@@ -17,7 +17,7 @@ labels:
   org.opencontainers.image.licenses: "Apache-2.0"
   org.opencontainers.image.url: "https://www.keycloak.org"
   org.opencontainers.image.vendor: "Iron Bank"
-  org.opencontainers.image.version: "24.0.2"
+  org.opencontainers.image.version: "24.0.3"
   mil.dso.ironbank.image.keywords: "auth,idam,sso"
   mil.dso.ironbank.image.type: "opensource"
   mil.dso.ironbank.product.name: "Keycloak"
