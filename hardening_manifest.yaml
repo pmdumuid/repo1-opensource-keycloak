@@ -24,7 +24,7 @@ labels:
 
 resources:
 - tag: quay.io/keycloak/keycloak:24.0.3
-  url: docker://quay.io/keycloak/keycloak@sha256:0d71412ed56b5f66f7e922efc0c3ff73b3f54ba2fe84fedb5e281a1f90b95bd6
+  url: docker://quay.io/keycloak/keycloak@sha256:4d6f22991266b4c4b0b1924f5f91a4e6197e33100e5eac504a490ae78495c7e0
 
 maintainers:
   - name: "Jacob Hanafin"
